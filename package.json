@@ -9,11 +9,6 @@
     "email": "dave.des@gmail.com",
     "url": "https://github.com/mattdesl"
   },
-  "standard": {
-    "globals": [
-      "THREE"
-    ]
-  },
   "dependencies": {
     "array-shuffle": "^1.0.1",
     "inherits": "^2.0.1",
@@ -33,10 +28,12 @@
     "load-bmfont": "^1.0.0",
     "standard": "^14.3.4",
     "sun-tzu-quotes": "^1.0.0",
-    "three": "^0.118.3",
     "three-orbit-viewer": "^69.2.9",
     "three-vignette-background": "^1.0.2",
     "uglify-js": "^3.10.0"
+  },
+  "peerDependencies": {
+    "three": "^0.118.3"
   },
   "scripts": {
     "build": "browserify test/test-shader.js -t glslify | uglifyjs -cm > test/bundle.js",
